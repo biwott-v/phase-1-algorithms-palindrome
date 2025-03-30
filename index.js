@@ -1,5 +1,15 @@
 function isPalindrome(word) {
   // Write your algorithm here
+  let palindrome = [];
+  newWord=word.split('');
+  for(let i=newWord.length-1;i>=0;i--){
+    palindrome.push(newWord[i]);
+  }
+  palindrome=palindrome.join("");
+  if(word===palindrome){
+    return true;
+  }
+  return false;
 }
 
 /* 
